@@ -8,7 +8,7 @@ using MongoDB.Driver;
 
 namespace DealsNet
 {
-	public class UserAuth : HttpDbClient, IHttpHandler
+	public class CreateUser : HttpDbClient, IHttpHandler
 	{
 		public bool IsReusable { get { return true; } }
 
@@ -49,7 +49,7 @@ namespace DealsNet
 			}; 
 			collection.InsertOne (document);
 
-			data.id = document.GetValue ("_id").ToString();
+			data.id = document.GetValue ("_id").ToString ();
 
 			ctx.Response.ContentType = "application/json";
 			ctx.Response.Write (data);
