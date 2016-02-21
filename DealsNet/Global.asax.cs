@@ -13,7 +13,6 @@ namespace DealsNet
 		
 		protected void Application_Start (Object sender, EventArgs e)
 		{
-			Console.SetOut (new StreamWriter ("web_log.log"));
 		}
 
 		protected void Session_Start (Object sender, EventArgs e)

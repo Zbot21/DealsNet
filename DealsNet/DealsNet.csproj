@@ -72,6 +72,12 @@
     <Compile Include="Utils.cs" />
     <Compile Include="CreateUser.cs" />
     <Compile Include="DbUtils.cs" />
+    <Compile Include="CreateDeal.cs" />
+    <Compile Include="Deal.cs" />
+    <Compile Include="IDealDatabase.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="DealsDatabase.cs" />
+    <Compile Include="FindDeal.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
