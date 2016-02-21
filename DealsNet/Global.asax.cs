@@ -2,6 +2,7 @@
 namespace DealsNet
 {
 	using System;
+	using System.IO;
 	using System.Collections;
 	using System.ComponentModel;
 	using System.Web;
@@ -12,6 +13,7 @@ namespace DealsNet
 		
 		protected void Application_Start (Object sender, EventArgs e)
 		{
+			Console.SetOut (new StreamWriter ("web_log.log"));
 		}
 
 		protected void Session_Start (Object sender, EventArgs e)
