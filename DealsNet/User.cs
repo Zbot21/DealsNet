@@ -10,6 +10,7 @@ namespace DealsNet
 		public User ()
 		{
 		}
+
 	}
 }
 

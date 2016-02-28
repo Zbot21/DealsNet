@@ -11,8 +11,10 @@ namespace DealsNet
 		bool AddDeal(string user, Deal deal);
 		Deal GetDeal(string id);
 		IList<Deal> DynamicDealSearch (dynamic search);
+		IList<Deal> GetAllDeals();
 		bool LikeDeal(string user, string id);
 		bool DislikeDeal(string user, string id);
+		bool RemoveFeelings(string user, string id);
 	}
 }
 
